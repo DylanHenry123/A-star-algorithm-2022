@@ -332,21 +332,3 @@ function main(){
 
 fillArray(50, 50);
 draw_grid();
-
-
-// Could add something to highlight the optimal path when the target node is reached by backtracking the distances.
-// Issue could be that it is not chosing the shortest node in f at the time and only the nodes whose f values can be considered in the calculate function.
-// Step through the code to make sure that the right decision is being made at each step of the problem.
-
-
-// Original code:
-        // let selected_node = list_to_chose[0];
-
-        // for(let i = 1; i < list_to_chose.length; i++){
-        //     if(list_to_chose[i] != start){
-        //         if(list_to_chose[i].f < selected_node.f){
-        //             selected_node = list_to_chose[i];
-        //             console.log(selected_node);
-        //         }
-        //     }
-        // }
