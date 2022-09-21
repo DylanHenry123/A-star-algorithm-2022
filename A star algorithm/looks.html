@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <div class="title">
+            <h1>A* Algorithm - Path finding</h1>
+        </div>
+
+        <div class="grid">
+            <table id="canvas"></table>
+        </div>
+
+        <div class="setup">
+            <label for="start_x"> starting node x co-ordinate: </label>
+            <input type="number" id="start_x" value="0">
+
+            <label for="start_x"> starting node y co-ordinate: </label>
+            <input type="number" id="start_y" value="0">
+
+            <label for="start_x"> ending node x co-ordinate: </label>
+            <input type="number" id="end_x" value="49">
+
+            <label for="start_x"> ending node y co-ordinate: </label>
+            <input type="number" id="end_y" value="49">
+
+            <button id="submit_button" onclick="gridSetUp()">Submit</button>
+            <button id="clear_button" onclick="clear_from_screen()">Clear</button>
+            <button id="run_button" onclick="main()">Run</button>
+        </div>
+        
+        <p id="the_length"></p>
+
+
+        <script src="algorithm.js"></script>
+    </body>
+</html>
